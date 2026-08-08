@@ -3,79 +3,261 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Bikash | Personal Blog</title>
+  <title>Nepal Police School Dharan | Official Portal</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
+  <!-- Top Announcement Bar -->
+  <div class="top-bar">
+    <div class="container top-container">
+      <span><i class="fas fa-globe"></i> www.npsdharan.edu.np</span>
+      <span><i class="fas fa-envelope"></i> info@npsdharan.edu.np | Dharan, Nepal</span>
+    </div>
+  </div>
+
   <!-- Navigation Bar -->
   <nav class="navbar">
-    <div class="nav-container">
-      <a href="#" class="logo">Bikash<span>.dev</span></a>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#posts">Articles</a></li>
-        <li><a href="#about">About</a></li>
+    <div class="container nav-container">
+      <a href="#" class="logo">
+        <div class="logo-badge">NPS</div>
+        <span>Nepal Police School <strong>Dharan</strong></span>
+      </a>
+      <button class="mobile-toggle" id="mobile-toggle">&#9776;</button>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#about" class="nav-link">About Us</a></li>
+        <li><a href="#leadership" class="nav-link">Messages</a></li>
+        <li><a href="#team" class="nav-link">Our Team</a></li>
+        <li><a href="#academics" class="nav-link">Academics</a></li>
+        <li><a href="#calendar" class="nav-link">Calendar & Exams</a></li>
+        <li><a href="#contact" class="btn-primary">Contact Us</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <header id="home" class="hero">
-    <div class="hero-content">
-      <span class="badge">Welcome to my space</span>
-      <h1>Thoughts, Code & Digital Insights</h1>
-      <p>Exploring web development, technology trends, and personal project updates.</p>
+  <!-- Hero Banner -->
+  <header class="hero">
+    <div class="container hero-content">
+      <span class="hero-badge">Public Information Portal</span>
+      <h1>Excellence in Education & Discipline</h1>
+      <p>Nurturing young minds through holistic academic programs, military-grade discipline, and modern technological training.</p>
+      <div class="hero-btns">
+        <a href="#academics" class="btn-primary">Explore Academics</a>
+        <a href="#about" class="btn-outline">Learn More</a>
+      </div>
     </div>
   </header>
 
-  <!-- Main Content / Articles -->
-  <main id="posts" class="main-container">
-    <h2 class="section-title">Latest Posts</h2>
-    
-    <div class="grid">
-      <!-- Article Card 1 -->
-      <article class="card">
-        <div class="card-tag">Web Development</div>
-        <h3 class="card-title">Building Modern Static Sites with GitHub Pages</h3>
-        <p class="card-excerpt">Learn how to configure, structure, and deploy sleek static websites for free using GitHub Pages and CSS Grid...</p>
-        <div class="card-footer">
-          <span class="date">Aug 8, 2026</span>
-          <a href="#" class="read-btn">Read Post &rarr;</a>
+  <!-- About & Mission Section -->
+  <section id="about" class="section">
+    <div class="container grid-2">
+      <div class="about-card card">
+        <span class="tag">01</span>
+        <h2>About Us</h2>
+        <p>Nepal Police School Dharan is dedicated to providing quality education integrated with discipline, patriotism, and character building. We aim to empower students with knowledge and life skills necessary for future leadership.</p>
+      </div>
+      <div class="mission-card card dark-card">
+        <span class="tag">02</span>
+        <h2>Mission & Vision</h2>
+        <div class="mv-block">
+          <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+          <p>To deliver modern academic excellence while cultivating character, high moral values, and civic responsibility.</p>
         </div>
-      </article>
-
-      <!-- Article Card 2 -->
-      <article class="card">
-        <div class="card-tag">CSS Architecture</div>
-        <h3 class="card-title">Mastering Responsive Layouts with Flexbox & Grid</h3>
-        <p class="card-excerpt">A comprehensive guide on combining CSS Flexbox and CSS Grid to create seamless designs across desktop and mobile screens...</p>
-        <div class="card-footer">
-          <span class="date">Aug 2, 2026</span>
-          <a href="#" class="read-btn">Read Post &rarr;</a>
+        <div class="mv-block">
+          <h3><i class="fas fa-eye"></i> Our Vision</h3>
+          <p>To emerge as a premier educational institute in Nepal recognized for academic rigor, discipline, and technological innovation.</p>
         </div>
-      </article>
-
-      <!-- Article Card 3 -->
-      <article class="card">
-        <div class="card-tag">Technology</div>
-        <h3 class="card-title">Essential Tools for Every Developer in 2026</h3>
-        <p class="card-excerpt">A breakdown of my favorite extensions, terminal setups, and software suites that streamline modern coding workflows...</p>
-        <div class="card-footer">
-          <span class="date">Jul 28, 2026</span>
-          <a href="#" class="read-btn">Read Post &rarr;</a>
-        </div>
-      </article>
+      </div>
     </div>
-  </main>
+  </section>
+
+  <!-- Leadership Messages -->
+  <section id="leadership" class="section bg-light">
+    <div class="container">
+      <h2 class="section-heading text-center">School Leadership Messages</h2>
+      <div class="grid-2 margin-top">
+        <div class="card message-card">
+          <span class="tag">03</span>
+          <h3>Message from the Principal</h3>
+          <p class="quote">"Education is not merely about transferring knowledge; it is about building resilient, ethical, and intelligent citizens who can lead tomorrow's Nepal."</p>
+          <div class="author-info">
+            <strong>School Principal</strong>
+            <span>Nepal Police School Dharan</span>
+          </div>
+        </div>
+        <div class="card message-card">
+          <span class="tag">04</span>
+          <h3>Message from the Chairman (SMC)</h3>
+          <p class="quote">"The School Management Committee is steadfast in fostering a safe, tech-enabled, and structured environment for our students and faculty to excel."</p>
+          <div class="author-info">
+            <strong>Chairman, SMC</strong>
+            <span>Nepal Police School Dharan</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Team Section (Tabbed View) -->
+  <section id="team" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="tag">05</span>
+        <h2 class="section-heading">Our Dedicated Team</h2>
+      </div>
+
+      <!-- Tab Buttons -->
+      <div class="tab-buttons">
+        <button class="tab-btn active" onclick="openTeamTab(event, 'academic-team')">Academic Team</button>
+        <button class="tab-btn" onclick="openTeamTab(event, 'police-team')">Police Personals Team</button>
+        <button class="tab-btn" onclick="openTeamTab(event, 'admin-team')">Admin Team</button>
+        <button class="tab-btn" onclick="openTeamTab(event, 'alumni-team')">Alumni Network</button>
+      </div>
+
+      <!-- Tab Contents -->
+      <div id="academic-team" class="tab-content active">
+        <div class="grid-3">
+          <div class="team-card"><h4>Senior Faculty</h4><p>Secondary Level Educators</p></div>
+          <div class="team-card"><h4>Primary Faculty</h4><p>Basic Level Mentors</p></div>
+          <div class="team-card"><h4>Computer Instructors</h4><p>IT & Tech Lab Specialists</p></div>
+        </div>
+      </div>
+
+      <div id="police-team" class="tab-content">
+        <div class="grid-3">
+          <div class="team-card"><h4>Commanding Officer</h4><p>Discipline & Operations</p></div>
+          <div class="team-card"><h4>Drill Instructors</h4><p>Physical Training & Parade</p></div>
+          <div class="team-card"><h4>Security Detail</h4><p>Campus Safety & Management</p></div>
+        </div>
+      </div>
+
+      <div id="admin-team" class="tab-content">
+        <div class="grid-3">
+          <div class="team-card"><h4>Account & Finance</h4><p>Billing & Records</p></div>
+          <div class="team-card"><h4>Exam Cell</h4><p>Evaluation & Transcripts</p></div>
+          <div class="team-card"><h4>Logistics & Support</h4><p>Facility Operations</p></div>
+        </div>
+      </div>
+
+      <div id="alumni-team" class="tab-content">
+        <div class="grid-3">
+          <div class="team-card"><h4>NPS Dharan Alumni Network</h4><p>Connecting thousands of graduates across Nepal & worldwide.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics Section -->
+  <section id="academics" class="section bg-light">
+    <div class="container">
+      <h2 class="section-heading">Academics & Curricula</h2>
+      <p class="section-subtext">Filter and explore our academic structures and pedagogical methods.</p>
+
+      <div class="search-box">
+        <input type="text" id="program-search" placeholder="Search academic levels or subjects..." onkeyup="filterPrograms()" />
+      </div>
+
+      <div class="grid-3 margin-top" id="programs-grid">
+        <div class="card program-card">
+          <span class="tag">06</span>
+          <h3>Basic / Primary Level</h3>
+          <span class="badge">Grades 1 - 5</span>
+          <p>Focusing on foundational literacy, numeracy, creative skills, and disciplined physical habits.</p>
+        </div>
+
+        <div class="card program-card">
+          <span class="tag">07</span>
+          <h3>L.Sec / Secondary Level</h3>
+          <span class="badge">Grades 6 - 10</span>
+          <p>Rigorous national curriculum emphasizing analytical thinking, science, mathematics, and extracurriculars.</p>
+        </div>
+
+        <div class="card program-card highlight-card">
+          <span class="tag">08</span>
+          <h3>Higher Secondary +2</h3>
+          <span class="badge">Management with Computer Science</span>
+          <p>Specialized stream preparing students for modern careers in business management, IT, and software.</p>
+        </div>
+      </div>
+
+      <!-- Additional Academic Specs -->
+      <div class="grid-2 margin-top">
+        <div class="card spec-card">
+          <span class="tag">11</span>
+          <h4>Teaching Methodology & Learning Environment</h4>
+          <p>Interactive smart-classrooms, hands-on computer laboratory sessions, field trips, and leadership workshops.</p>
+        </div>
+        <div class="card spec-card">
+          <span class="tag">12</span>
+          <h4>Assessment and Monitoring</h4>
+          <p>Continuous internal evaluation, periodic unit tests, attendance tracking, and parent-teacher consultative meets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academic Calendar & Exam Routines -->
+  <section id="calendar" class="section">
+    <div class="container grid-2">
+      <div class="card">
+        <span class="tag">09 / 13</span>
+        <h2>Academic Calendar & Faculty</h2>
+        <p>Stay informed about term start dates, vacations, dynamic events, and teaching faculty details.</p>
+        <button class="btn-primary" onclick="openModal('calendarModal')">View Academic Calendar</button>
+        <button class="btn-outline" onclick="openModal('facultyModal')">View Faculty Directory (13)</button>
+      </div>
+
+      <div class="card">
+        <span class="tag">10 / 14</span>
+        <h2>Examinations & Routines</h2>
+        <p>Access routine schedules for terminal examinations, board exams, and grading evaluation frameworks.</p>
+        <button class="btn-primary" onclick="openModal('examModal')">Download Exam Routines (14)</button>
+        <button class="btn-outline" onclick="openModal('evalModal')">Evaluation System (10)</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Modal Popup -->
+  <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation()">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div id="modal-body"></div>
+    </div>
+  </div>
 
   <!-- Footer -->
-  <footer class="footer">
-    <p>&copy; 2026 Bikash. Designed & Hosted on GitHub Pages.</p>
+  <footer class="footer" id="contact">
+    <div class="container grid-3">
+      <div>
+        <h3>Nepal Police School Dharan</h3>
+        <p>Promoting academic brilliance and discipline in Dharan, Nepal.</p>
+        <p><strong>Official URL:</strong> www.npsdharan.edu.np</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#academics">Academic Programs</a></li>
+          <li><a href="#team">Our Teams</a></li>
+          <li><a href="#calendar">Exam Routines</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Portal</h4>
+        <p>Dharan, Sunsari District, Nepal</p>
+        <p>Email: info@npsdharan.edu.np</p>
+        <p>Phone: +977-25-XXXXXX</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Nepal Police School Dharan. Public Information Portal. All Rights Reserved.</p>
+    </div>
   </footer>
 
+  <script src="script.js"></script>
 </body>
 </html>

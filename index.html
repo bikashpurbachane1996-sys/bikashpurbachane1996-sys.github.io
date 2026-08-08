@@ -3,35 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Personal Blog</title>
+  <title>Bikash | Personal Blog</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>My Personal Blog</h1>
-      <p>Sharing thoughts on tech, learning, and life.</p>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Bikash<span>.dev</span></a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#posts">Articles</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">Welcome to my space</span>
+      <h1>Thoughts, Code & Digital Insights</h1>
+      <p>Exploring web development, technology trends, and personal project updates.</p>
     </div>
   </header>
 
-  <main class="container">
-    <article class="post">
-      <h2><a href="#">Getting Started with My New Blog</a></h2>
-      <span class="date">August 8, 2026</span>
-      <p>Welcome to my first blog post! I built this site and hosted it using GitHub Pages...</p>
-    </article>
+  <!-- Main Content / Articles -->
+  <main id="posts" class="main-container">
+    <h2 class="section-title">Latest Posts</h2>
+    
+    <div class="grid">
+      <!-- Article Card 1 -->
+      <article class="card">
+        <div class="card-tag">Web Development</div>
+        <h3 class="card-title">Building Modern Static Sites with GitHub Pages</h3>
+        <p class="card-excerpt">Learn how to configure, structure, and deploy sleek static websites for free using GitHub Pages and CSS Grid...</p>
+        <div class="card-footer">
+          <span class="date">Aug 8, 2026</span>
+          <a href="#" class="read-btn">Read Post &rarr;</a>
+        </div>
+      </article>
 
-    <article class="post">
-      <h2><a href="#">Why I Love Building Web Projects</a></h2>
-      <span class="date">August 1, 2026</span>
-      <p>Building projects on the web is one of the best ways to practice coding and share ideas with the world...</p>
-    </article>
+      <!-- Article Card 2 -->
+      <article class="card">
+        <div class="card-tag">CSS Architecture</div>
+        <h3 class="card-title">Mastering Responsive Layouts with Flexbox & Grid</h3>
+        <p class="card-excerpt">A comprehensive guide on combining CSS Flexbox and CSS Grid to create seamless designs across desktop and mobile screens...</p>
+        <div class="card-footer">
+          <span class="date">Aug 2, 2026</span>
+          <a href="#" class="read-btn">Read Post &rarr;</a>
+        </div>
+      </article>
+
+      <!-- Article Card 3 -->
+      <article class="card">
+        <div class="card-tag">Technology</div>
+        <h3 class="card-title">Essential Tools for Every Developer in 2026</h3>
+        <p class="card-excerpt">A breakdown of my favorite extensions, terminal setups, and software suites that streamline modern coding workflows...</p>
+        <div class="card-footer">
+          <span class="date">Jul 28, 2026</span>
+          <a href="#" class="read-btn">Read Post &rarr;</a>
+        </div>
+      </article>
+    </div>
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 My Personal Blog. Hosted on GitHub Pages.</p>
-    </div>
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2026 Bikash. Designed & Hosted on GitHub Pages.</p>
   </footer>
+
 </body>
 </html>

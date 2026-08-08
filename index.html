@@ -1,263 +1,365 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Nepal Police School Dharan | Official Portal</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Himalayan Logic | Logic Beyond Limits | Software Engineering & AI Nepal</title>
+    <meta name="description" content="Himalayan Logic is Nepal's leading premium software engineering, artificial intelligence, and digital transformation company building world-class intelligent enterprise solutions." />
+    <!-- Fonts -->
+    <!-- Bootstrap 5.3.7 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!--  Custom CSS -->
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="stylesheet" href="css/responsive.css">
+      <link rel="stylesheet" href="css/animations.css">
 
-  <!-- Top Announcement Bar -->
-  <div class="top-bar">
-    <div class="container top-container">
-      <span><i class="fas fa-globe"></i> www.npsdharan.edu.np</span>
-      <span><i class="fas fa-envelope"></i> info@npsdharan.edu.np | Dharan, Nepal</span>
-    </div>
-  </div>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">
-        <div class="logo-badge">NPS</div>
-        <span>Nepal Police School <strong>Dharan</strong></span>
-      </a>
-      <button class="mobile-toggle" id="mobile-toggle">&#9776;</button>
-      <ul class="nav-menu" id="nav-menu">
-        <li><a href="#about" class="nav-link">About Us</a></li>
-        <li><a href="#leadership" class="nav-link">Messages</a></li>
-        <li><a href="#team" class="nav-link">Our Team</a></li>
-        <li><a href="#academics" class="nav-link">Academics</a></li>
-        <li><a href="#calendar" class="nav-link">Calendar & Exams</a></li>
-        <li><a href="#contact" class="btn-primary">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Banner -->
-  <header class="hero">
-    <div class="container hero-content">
-      <span class="hero-badge">Public Information Portal</span>
-      <h1>Excellence in Education & Discipline</h1>
-      <p>Nurturing young minds through holistic academic programs, military-grade discipline, and modern technological training.</p>
-      <div class="hero-btns">
-        <a href="#academics" class="btn-primary">Explore Academics</a>
-        <a href="#about" class="btn-outline">Learn More</a>
-      </div>
-    </div>
-  </header>
-
-  <!-- About & Mission Section -->
-  <section id="about" class="section">
-    <div class="container grid-2">
-      <div class="about-card card">
-        <span class="tag">01</span>
-        <h2>About Us</h2>
-        <p>Nepal Police School Dharan is dedicated to providing quality education integrated with discipline, patriotism, and character building. We aim to empower students with knowledge and life skills necessary for future leadership.</p>
-      </div>
-      <div class="mission-card card dark-card">
-        <span class="tag">02</span>
-        <h2>Mission & Vision</h2>
-        <div class="mv-block">
-          <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
-          <p>To deliver modern academic excellence while cultivating character, high moral values, and civic responsibility.</p>
-        </div>
-        <div class="mv-block">
-          <h3><i class="fas fa-eye"></i> Our Vision</h3>
-          <p>To emerge as a premier educational institute in Nepal recognized for academic rigor, discipline, and technological innovation.</p>
+      <!--firebases-->
+    <script type="module" src="js/db.js"></script>
+  </head>
+  <body>
+    <!-- Sticky Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-tech fixed-top navbar-transparent">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+          <!--Logo -->
+          <img src="assets/logo.svg" alt="Himalayan Logic" style="height:70px; width:auto;">
+        </a>
+        <button class="navbar-toggler border-1" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="font-size:2rem;color:#111827;font-weight:700;">☰</span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+            <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+            <li class="nav-item ms-lg-3 mt-2 mt-lg-0">
+              <a class="btn btn-primary px-4 text-white" href="contact.html">Build With Us</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
-  </section>
+    </nav>
 
-  <!-- Leadership Messages -->
-  <section id="leadership" class="section bg-light">
-    <div class="container">
-      <h2 class="section-heading text-center">School Leadership Messages</h2>
-      <div class="grid-2 margin-top">
-        <div class="card message-card">
-          <span class="tag">03</span>
-          <h3>Message from the Principal</h3>
-          <p class="quote">"Education is not merely about transferring knowledge; it is about building resilient, ethical, and intelligent citizens who can lead tomorrow's Nepal."</p>
-          <div class="author-info">
-            <strong>School Principal</strong>
-            <span>Nepal Police School Dharan</span>
+    <!-- Hero Section -->
+    <section class="hero-section bg-gradient-tech text-white d-flex align-items-center" style="min-height: 95vh; position: relative;">
+      <!-- Background Decoration -->
+      <div class="hero-shapes">
+        <div class="position-absolute rounded-circle" style="top: -10%; right: -5%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(37, 99, 235, 0.15) 0%, rgba(37, 99, 235, 0) 70%); filter: blur(80px); opacity: 0.4; pointer-events: none; z-index: 1;"></div>
+        <div class="position-absolute rounded-circle" style="bottom: -10%; left: -5%; width: 400px; height: 400px; background: radial-gradient(circle, rgba(20, 184, 166, 0.25) 0%, rgba(20, 184, 166, 0) 70%); filter: blur(80px); opacity: 0.6; pointer-events: none; z-index: 1;"></div>
+      </div>
+      <!-- Animated SVG Lines Background -->
+      <svg class="hero-lines-svg" viewBox="0 0 1440 800" xmlns="http://www.w3.org/2000/svg" style="z-index: 1;">
+        <path d="M 0,200 C 300,150 400,350 700,250 C 1000,150 1100,450 1440,300" fill="none" stroke="rgba(20, 184, 166, 0.12)" stroke-width="2"></path>
+        <path d="M 0,400 C 400,500 600,200 900,400 C 1200,600 1300,300 1440,500" fill="none" stroke="rgba(37, 99, 235, 0.12)" stroke-width="2"></path>
+      </svg>
+      <!-- Interactive HTML5 Neural Net Canvas Background spanning the entire home section -->
+      <canvas id="neuralNetCanvas" class="position-absolute top-0 start-0 w-100 h-100" style="pointer-events: none; z-index: 1;"></canvas>
+
+      <div class="container py-5" style="position: relative; z-index: 2;">
+        <div class="row align-items-center">
+          <div class="col-lg-7 text-start animate-fade-in-up">
+            <span class="gradient-badge text-white mb-4 animate-glow" style="background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.12);">
+              <span class="text-accent">●</span> Innovation Starts with People
+            </span>
+            <h1 class="display-3 fw-bold mb-4 tracking-tight" style="font-family: var(--font-display); line-height: 1.1;">
+              Sustainable <span class="text-gradient" style="background: linear-gradient(135deg, #3B82F6 0%, #14B8A6 100%); -webkit-background-clip: text;">Innovation</span> with Purpose
+            </h1>
+            <p class="lead mb-5 text-white-50 fs-5" style="max-width: 620px;">
+            We help communities, businesses, researchers, and institutions create the digital experiences of tomorrow. Together, we combine innovation, collaboration, and global engineering to build sustainable solutions that create lasting impact.
+            </p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="contact.html" class="btn btn-primary btn-lg px-4 py-3">Build With Us</a>
+              <a href="services.html" class="btn btn-outline-light btn-lg px-4 py-3">Explore Services</a>
+            </div>
+          </div>
+          <div class="col-lg-5 d-none d-lg-block animate-fade-in-up delay-200">
+            <!-- Glassmorphic HUD overlay floating over the background neural net canvas -->
+            <div class="position-relative p-4">
+              <div class="position-relative overflow-hidden d-flex flex-column justify-content-between p-4" style="background: rgba(255, 255, 255, 0.45); border: 1px solid rgba(15, 23, 42, 0.08); backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px); border-radius: 24px; min-height: 440px; box-shadow: 0 25px 50px -12px rgba(15, 23, 42, 0.05); pointer-events: auto;">
+                
+                <!-- Top badges row -->
+                <div class="d-flex justify-content-between align-items-center mb-4 position-relative" style="z-index: 2;">
+                  <div class="d-flex align-items-center gap-2 px-3 py-1.5 rounded-pill" style="background: rgba(37, 99, 235, 0.08); border: 1px solid rgba(37, 99, 235, 0.15);">
+                    <svg class="text-primary animate-pulse" width="14" height="14" fill="none" stroke="#2563EB" stroke-width="2.5" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12h3.085c.427 0 .806.273.94.678l1.34 4.018a1.125 1.125 0 002.133-.04l2.545-8.484a1.125 1.125 0 012.13-.038L15.75 14.25c.133.405.513.678.94.678h3.06" />
+                    </svg>
+                    <span class="font-monospace text-primary fw-bold" style="font-size: 0.75rem; letter-spacing: 0.05em; color: #2563EB !important;">Better, Smarter, Faster</span>
+                  </div>
+                </div>
+
+                <!-- Middle space (the node visualization canvas will be visible behind) -->
+                <div style="height: 120px;"></div>
+
+                <!-- Simulation seed info box -->
+                <div class="p-4 rounded-4 position-relative mb-3" style="background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid rgba(15, 23, 42, 0.06); z-index: 2;">
+                  <div class="font-monospace fw-bold mb-2 text-uppercase" style="font-size: 0.7rem; letter-spacing: 0.15em; color: #2563EB;">Sustainable Seed</div>
+                  <h4 class="fw-bold mb-2" style="font-size: 1.1rem; letter-spacing: -0.02em; color: #0F172A !important;">Community First, Research Driven & Technology Forward.</h4>
+                  <p class="mb-0" style="font-size: 0.8rem; line-height: 1.4; color: #4B5563 !important;">We partner with people, organizations, and researchers to build intelligent technologies that solve real-world challenges and shape a better future.</p>
+                </div>
+
+                <!-- Bottom reference details -->
+                <div class="d-flex justify-content-between align-items-center position-relative mt-2" style="z-index: 2; font-size: 0.7rem; letter-spacing: 0.08em; color: rgba(15, 23, 42, 0.5);">
+                  <div class="font-monospace">GRID_REF: <span style="color: rgba(15, 23, 42, 0.75);">26° 39' 53" N, 87° 16' 18" E</span></div>
+                  <div class="font-monospace">NEPAL_CS_R&D</div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="card message-card">
-          <span class="tag">04</span>
-          <h3>Message from the Chairman (SMC)</h3>
-          <p class="quote">"The School Management Committee is steadfast in fostering a safe, tech-enabled, and structured environment for our students and faculty to excel."</p>
-          <div class="author-info">
-            <strong>Chairman, SMC</strong>
-            <span>Nepal Police School Dharan</span>
+      </div>
+      <div class="position-absolute bottom-0 start-50 translate-middle-x mb-4 text-center d-none d-md-block animate-fade-in delay-500">
+        <p class="text-white-50 mb-1" style="font-size: 0.8rem; letter-spacing: 0.1em;">SCROLL TO EXPLORE</p>
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round" class="text-accent animate-float">
+          <path d="M12 5v14M19 12l-7 7-7-7"/>
+        </svg>
+      </div>
+    </section>
+
+
+    <!-- Development Process Timeline Section -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="row justify-content-center text-center mb-5">
+          <div class="col-lg-7">
+            <span class="gradient-badge mb-3">Where do we create impact?</span>
+            <h2 class="section-title">Fusing Logic Across Vital Sectors</h2>
+            <p class="text-secondary">We combine research, innovation, and global engineering to help communities, organizations, and industries embrace intelligent, sustainable digital transformation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-container mt-5">
+          <div class="timeline-line"></div>
+          
+          <!-- Step 1 -->
+          <div class="timeline-step">
+            <div class="timeline-step-badge">1</div>
+            <div class="timeline-step-content reveal-on-scroll">
+              <div class="timeline-step-card">
+                <h4 class="fw-bold mb-2 text-primary">Education & Research</h4>
+                <p class="text-secondary mb-0"><b>Empowering Learning Through Innovation </b> <br>
+
+We help educational institutions and research organizations create intelligent digital experiences that advance learning, collaboration, and discovery.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step">
+            <div class="timeline-step-badge">2</div>
+            <div class="timeline-step-content reveal-on-scroll">
+              <div class="timeline-step-card">
+                <h4 class="fw-bold mb-2 text-primary">Healthcare & Life Sciences</h4>
+                <p class="text-secondary mb-0"><b>Building Smarter Healthcare Systems</b> <br>
+
+We develop secure and intelligent digital solutions that improve healthcare delivery, operational efficiency, and patient experiences.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step">
+            <div class="timeline-step-badge">3</div>
+            <div class="timeline-step-content reveal-on-scroll">
+              <div class="timeline-step-card">
+                <h4 class="fw-bold mb-2 text-primary">Government & Public Services</h4>
+                <p class="text-secondary mb-0"><b>Accelerating Digital Governance</b> <br> We partner with public institutions to build transparent, efficient, citizen-centric digital services for connected communities and clear workflows.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step">
+            <div class="timeline-step-badge">4</div>
+            <div class="timeline-step-content reveal-on-scroll">
+              <div class="timeline-step-card">
+                <h4 class="fw-bold mb-2 text-primary">Agriculture, Tourism & Sustainable Development</h4>
+                <p class="text-secondary mb-0"><b>Empowering Sustainable Growth</b> <br> We create intelligent technologies that support agriculture, tourism, environmental sustainability, and regional development through innovation and data-driven solutions.</p>
+              </div>
+            </div>
+          </div>
+
+           <!-- Step 5 -->
+          <div class="timeline-step">
+            <div class="timeline-step-badge">5</div>
+            <div class="timeline-step-content reveal-on-scroll">
+              <div class="timeline-step-card">
+                <h4 class="fw-bold mb-2 text-primary"> Business & Enterprise Solutions</h4>
+                <p class="text-secondary mb-0"><b>Transforming Businesses for Tomorrow</b><br>We help organizations modernize operations, enhance customer experiences, and unlock new opportunities through intelligent digital transformation.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- Quick Contact Block -->
+    <section class="section-padding bg-light">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5 reveal-on-scroll">
+            <span class="gradient-badge mb-3">CONTACT US</span>
+            <h2 class="section-title">Let's Co-create the Future</h2>
+            <p class="text-secondary mb-4">Great technology is never built alone! <br>
+
+Whether you're a startup, university, government agency, business, researcher, investor, or community organization, we believe the best ideas emerge through collaboration..</p>
+            
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Let's Talk</h6>
+                <p class="text-secondary mb-0">+977 9800000000</p>
+              </div>
+            </div>
+
+            <div class="contact-info-item">
+              <div class="contact-info-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              </div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Mail</h6>
+                <p class="text-secondary mb-0">contact@himalayanlogic.com</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7 reveal-on-scroll delay-100">
+            <div class="card p-4 p-md-5 border-0 shadow-sm" style="border-radius: 1.25rem;">
+              <form id="contactForm" class="needs-validation" novalidate>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <label class="form-label text-dark fw-semibold small">Full Name</label>
+                    <input type="text" class="form-control px-3 py-2 border-0 bg-light" style="border-radius:0.5rem;" id="contactName" required placeholder="eg. Ram Sharma">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-dark fw-semibold small">Phone</label>
+                    <input type="tel" class="form-control px-3 py-2 border-0 bg-light" style="border-radius:0.5rem;" id="contactPhone" required placeholder="eg. 98xxxxxxxx">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label text-dark fw-semibold small">Email Address</label>
+                    <input type="email" class="form-control px-3 py-2 border-0 bg-light" style="border-radius:0.5rem;" id="contactEmail" required placeholder="eg. ram@example.com">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label text-dark fw-semibold small">Message</label>
+                    <input type="text" class="form-control px-3 py-2 border-0 bg-light" style="border-radius:0.5rem;" id="contactSubject" required placeholder="eg. we want to discuss a problem / project idea...">
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-primary w-100 py-3">Send A Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Our Team Section (Tabbed View) -->
-  <section id="team" class="section">
-    <div class="container">
-      <div class="section-header">
-        <span class="tag">05</span>
-        <h2 class="section-heading">Our Dedicated Team</h2>
-      </div>
+    <!-- Footer -->
+    <footer class="footer text-white-50">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-4 col-md-6">
+            <a class="footer-logo d-flex align-items-left text-white text-decoration-none mb-3" href="index.html">
+              <div class="d-flex align-items-left">
+                <img src="assets/logo.svg" alt="Himalayan Logic Logo" width="350" height="200" class="me-2">
+         </div>
+            </a>
+            <p class="mb-4">Building intelligent technologies through research, innovation, and collaboration for a sustainable digital future.</p>
+            <!-- social media icons-->
+            <div class="d-flex gap-3">
+             <a href="https://linkedin.com"
+       class="text-white-50 fs-5"
+       target="_blank"
+       aria-label="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+    </a>
 
-      <!-- Tab Buttons -->
-      <div class="tab-buttons">
-        <button class="tab-btn active" onclick="openTeamTab(event, 'academic-team')">Academic Team</button>
-        <button class="tab-btn" onclick="openTeamTab(event, 'police-team')">Police Personals Team</button>
-        <button class="tab-btn" onclick="openTeamTab(event, 'admin-team')">Admin Team</button>
-        <button class="tab-btn" onclick="openTeamTab(event, 'alumni-team')">Alumni Network</button>
-      </div>
+    <a href="https://facebook.com"
+       class="text-white-50 fs-5"
+       target="_blank"
+       aria-label="Facebook">
+        <i class="bi bi-facebook"></i>
+    </a>
 
-      <!-- Tab Contents -->
-      <div id="academic-team" class="tab-content active">
-        <div class="grid-3">
-          <div class="team-card"><h4>Senior Faculty</h4><p>Secondary Level Educators</p></div>
-          <div class="team-card"><h4>Primary Faculty</h4><p>Basic Level Mentors</p></div>
-          <div class="team-card"><h4>Computer Instructors</h4><p>IT & Tech Lab Specialists</p></div>
-        </div>
-      </div>
+    <a href="https://instagram.com"
+       class="text-white-50 fs-5"
+       target="_blank"
+       aria-label="Instagram">
+        <i class="bi bi-instagram"></i>
+    </a>
 
-      <div id="police-team" class="tab-content">
-        <div class="grid-3">
-          <div class="team-card"><h4>Commanding Officer</h4><p>Discipline & Operations</p></div>
-          <div class="team-card"><h4>Drill Instructors</h4><p>Physical Training & Parade</p></div>
-          <div class="team-card"><h4>Security Detail</h4><p>Campus Safety & Management</p></div>
-        </div>
-      </div>
+    <a href="https://youtube.com"
+       class="text-white-50 fs-5"
+       target="_blank"
+       aria-label="YouTube">
+        <i class="bi bi-youtube"></i>
+    </a>
 
-      <div id="admin-team" class="tab-content">
-        <div class="grid-3">
-          <div class="team-card"><h4>Account & Finance</h4><p>Billing & Records</p></div>
-          <div class="team-card"><h4>Exam Cell</h4><p>Evaluation & Transcripts</p></div>
-          <div class="team-card"><h4>Logistics & Support</h4><p>Facility Operations</p></div>
-        </div>
-      </div>
-
-      <div id="alumni-team" class="tab-content">
-        <div class="grid-3">
-          <div class="team-card"><h4>NPS Dharan Alumni Network</h4><p>Connecting thousands of graduates across Nepal & worldwide.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Academics Section -->
-  <section id="academics" class="section bg-light">
-    <div class="container">
-      <h2 class="section-heading">Academics & Curricula</h2>
-      <p class="section-subtext">Filter and explore our academic structures and pedagogical methods.</p>
-
-      <div class="search-box">
-        <input type="text" id="program-search" placeholder="Search academic levels or subjects..." onkeyup="filterPrograms()" />
-      </div>
-
-      <div class="grid-3 margin-top" id="programs-grid">
-        <div class="card program-card">
-          <span class="tag">06</span>
-          <h3>Basic / Primary Level</h3>
-          <span class="badge">Grades 1 - 5</span>
-          <p>Focusing on foundational literacy, numeracy, creative skills, and disciplined physical habits.</p>
-        </div>
-
-        <div class="card program-card">
-          <span class="tag">07</span>
-          <h3>L.Sec / Secondary Level</h3>
-          <span class="badge">Grades 6 - 10</span>
-          <p>Rigorous national curriculum emphasizing analytical thinking, science, mathematics, and extracurriculars.</p>
-        </div>
-
-        <div class="card program-card highlight-card">
-          <span class="tag">08</span>
-          <h3>Higher Secondary +2</h3>
-          <span class="badge">Management with Computer Science</span>
-          <p>Specialized stream preparing students for modern careers in business management, IT, and software.</p>
-        </div>
-      </div>
-
-      <!-- Additional Academic Specs -->
-      <div class="grid-2 margin-top">
-        <div class="card spec-card">
-          <span class="tag">11</span>
-          <h4>Teaching Methodology & Learning Environment</h4>
-          <p>Interactive smart-classrooms, hands-on computer laboratory sessions, field trips, and leadership workshops.</p>
-        </div>
-        <div class="card spec-card">
-          <span class="tag">12</span>
-          <h4>Assessment and Monitoring</h4>
-          <p>Continuous internal evaluation, periodic unit tests, attendance tracking, and parent-teacher consultative meets.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Academic Calendar & Exam Routines -->
-  <section id="calendar" class="section">
-    <div class="container grid-2">
-      <div class="card">
-        <span class="tag">09 / 13</span>
-        <h2>Academic Calendar & Faculty</h2>
-        <p>Stay informed about term start dates, vacations, dynamic events, and teaching faculty details.</p>
-        <button class="btn-primary" onclick="openModal('calendarModal')">View Academic Calendar</button>
-        <button class="btn-outline" onclick="openModal('facultyModal')">View Faculty Directory (13)</button>
-      </div>
-
-      <div class="card">
-        <span class="tag">10 / 14</span>
-        <h2>Examinations & Routines</h2>
-        <p>Access routine schedules for terminal examinations, board exams, and grading evaluation frameworks.</p>
-        <button class="btn-primary" onclick="openModal('examModal')">Download Exam Routines (14)</button>
-        <button class="btn-outline" onclick="openModal('evalModal')">Evaluation System (10)</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Dynamic Modal Popup -->
-  <div id="modal-overlay" class="modal-overlay" onclick="closeModal()">
-    <div class="modal-content" onclick="event.stopPropagation()">
-      <span class="modal-close" onclick="closeModal()">&times;</span>
-      <div id="modal-body"></div>
-    </div>
+    <a href="https://github.com"
+       class="text-white-50 fs-5"
+       target="_blank"
+       aria-label="GitHub">
+        <i class="bi bi-github"></i>
+    </a>
   </div>
+ </div>
+ <!--enfo of first column -->
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-title">Company</h5>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
 
-  <!-- Footer -->
-  <footer class="footer" id="contact">
-    <div class="container grid-3">
-      <div>
-        <h3>Nepal Police School Dharan</h3>
-        <p>Promoting academic brilliance and discipline in Dharan, Nepal.</p>
-        <p><strong>Official URL:</strong> www.npsdharan.edu.np</p>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-title">Services</h5>
+            <ul class="footer-links">
+              <li><a href="services.html">Software Engineering Solutions</a></li>
+              <li><a href="services.html">AI, Data and Intelligent Systems</a></li>
+              <li><a href="services.html">Research and Innovation </a></li>
+              <li><a href="services.html">Cloud and Cybersecurity</a></li>
+              <li><a href="services.html">Digital Infrastructure </a></li>
+              <li><a href="services.html">Industry Solutions and Consulting</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-title">Himalayan's Newsletter</h5>
+            <p class="small mb-3">Receive updates on research, technology trends, AI, and innovative digital solutions delivered directly to your inbox.</p>
+            <form id="newsletterForm">
+              <div class="input-group">
+                <input type="email" class="form-control border-0 bg-primary bg-opacity-25 text-green" placeholder="your@email.com" required style="border-top-left-radius:0.5rem; border-bottom-left-radius:0.5rem;">
+                <button class="btn btn-accent px-3 text-white" type="submit" style="border-top-right-radius:0.5rem; border-bottom-right-radius:0.5rem; border-top-left-radius:0; border-bottom-left-radius:0; padding:0 0.75rem;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row footer-bottom text-center text-md-start">
+          <div class="col-md-6">
+            <p class="mb-0">© 2026 Himalayan Logic. All rights reserved. Registered in Nepal.</p>
+          </div>
+          <div class="col-md-6 text-md-end mt-2 mt-md-0">
+            <p class="mb-0">Itahari, Nepal | Logic Beyond Limits</p>
+          </div>
+        </div>
       </div>
-      <div>
-        <h4>Quick Links</h4>
-        <ul class="footer-links">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#academics">Academic Programs</a></li>
-          <li><a href="#team">Our Teams</a></li>
-          <li><a href="#calendar">Exam Routines</a></li>
-        </ul>
-      </div>
-      <div>
-        <h4>Contact Portal</h4>
-        <p>Dharan, Sunsari District, Nepal</p>
-        <p>Email: info@npsdharan.edu.np</p>
-        <p>Phone: +977-25-XXXXXX</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 Nepal Police School Dharan. Public Information Portal. All Rights Reserved.</p>
-    </div>
-  </footer>
+    </footer>
+    <!-- Bootstrap Bundle -->
+    <script type="module" src="js/bootstrap.bundle.min.js"></script>
+    <!-- Your JavaScript -->
+    <script type="module" src="js/animations.js"></script>
+    <script type="module" src="js/main.js"></script>
 
-  <script src="script.js"></script>
-</body>
+    <script type="module" src="js/contact.js"></script>
+  </body>
 </html>
